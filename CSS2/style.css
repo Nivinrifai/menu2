@@ -1,0 +1,143 @@
+.sidebar{
+    min-width: 120px;
+    box-shadow: 0px 0px 5px 10px grey;
+    border-radius: 15px;
+}
+
+
+.sidebar h3{
+margin-left: 19px;
+letter-spacing: 1px;
+color: greenyellow;
+}
+.sidebar > h3::before,
+.sidebar > h3::after{
+    content: "";
+    background-color:greenyellow;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 30px; 
+}
+.sidebar > h3::before{
+width: 88px;
+height: 2px;
+bottom: -10px;
+}
+.sidebar > h3::after{
+    content: "";
+    bottom: -18px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+li {
+    transition: 0.3s;
+    margin-bottom: 10px;
+    
+}
+ul{
+   align-items: center; 
+}
+.sidebar ul li a:hover,
+.sidebar ul li a:active{
+background-color:#f6f6f6 ;
+
+
+}
+.sidebar .type a::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:greenyellow;
+    display: inline-block;
+    border: 3px solid grey;
+    transition: 0.3s;
+    animation: go-up 0.8s infinite;
+}
+@keyframes go-up{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color:greenyellow;
+    }
+}
+.page{
+background: url(../img/news-01.png)no-repeat;
+background-size: cover;
+box-shadow: 0px 0px 10px 5px grey;
+border-radius: 50%;
+width: 700px;
+height: 700px;
+margin: 9px 0px 0px 9px;
+
+}
+@media(max-width:1400px){
+    .contact{
+	
+        background: url(../img/cofe.jpg)no-repeat;
+        background-size: cover;
+        box-shadow: 0px 0px 10px 5px grey;
+        border-radius: 75%;
+        width: 480px;
+        height: 480px;
+        margin: 9px 0px 0px 9px;
+      
+        }
+    }
+
+.info{
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    font-weight:bold;
+    letter-spacing: 2px;
+    padding: 20px;
+    transform: translate(100px ,500px);
+    box-shadow: -20px 15px 12px 13px gray;
+    color:white;
+}
+hr{
+   width: 350px;
+  
+    background-color: grey;
+} 
+.title p span{
+    text-align: center;
+    color: gray;
+    border-radius: 20px;
+    padding: 20px 200px;
+    background-color:greenyellow;
+   
+    line-height: 30px;
+    font-weight: bold;
+    border: 5px solid white;
+    outline: 5px solid greenyellow;
+}
+
+.close a{
+   padding:10px;
+    transition: 0.3s;
+    
+}
+.close a:hover{
+    border: 3px solid blue;
+    border-radius: 6px;
+}
+.close span{
+    box-shadow: inset;
+}
+footer{
+    margin-bottom: 10px;
+    background-color: grey;
+    }
+ 
+  
+
+
+
+
