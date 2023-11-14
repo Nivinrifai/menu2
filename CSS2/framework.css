@@ -9,6 +9,7 @@
  
  .d-flex{
 display: flex;
+ flex-wrap: wrap;    
 }
 a{
     text-decoration: none;
